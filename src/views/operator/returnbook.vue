@@ -6,7 +6,7 @@
       <a-row class="row">
         <a-col class="flex__col" >
           <div class="row__right--div">
-            <p>隔壁老王的二儿子</p>
+            <p>隔壁老王</p>
             <div class="opera">
               <a-button :type="item.type">{{item.lable}}</a-button>
             </div>

@@ -5,8 +5,11 @@
     <a-list-item v-for="(item,index) in data" :key="index">
       <a-row class="row">
         <a-col class="flex__col" >
+          <div class="row__left--div">
+            <img src="http://static.zongheng.com/upload/cover/f8/72/f87275042dd99b3849b5f36dc3b2b603.jpeg" style="width:100%"/>
+          </div>
           <div class="row__right--div">
-            <p>隔壁老王的二儿子</p>
+            <p>书名：《前端大佬如何脱坑》</p>
             <div class="opera">
               <a-button :type="item.type">{{item.lable}}</a-button>
             </div>
@@ -20,30 +23,30 @@
 <script>
 const data = [
   {
-    type: 'danger',
-    lable: '当前无法操作'
+    type: 'default',
+    lable: '已归还'
   },
   {
-    type: 'danger',
-    lable: '当前无法操作'
+    type: 'primary',
+    lable: '未归还'
   },{
     type: 'danger',
-    lable: '当前无法操作'
+    lable: '即将到期'
   },{
     type: 'danger',
-    lable: '当前无法操作'
+    lable: '即将到期'
+  },{
+    type: 'default',
+    lable: '已归还'
+  },{
+    type: 'primary',
+    lable: '未归还'
+  },{
+    type: 'primary',
+    lable: '未归还'
   },{
     type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
+    lable: '即将到期'
   },
 ];
 export default {

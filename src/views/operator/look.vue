@@ -6,8 +6,9 @@
       <a-row class="row">
         <a-col class="flex__col" >
           <div class="row__right--div">
-            <p>隔壁老王的二儿子</p>
+            <p>隔壁老王</p>
             <div class="opera">
+              <span>借阅状况：  </span>
               <a-button :type="item.type">{{item.lable}}</a-button>
             </div>
           </div>
@@ -20,30 +21,30 @@
 <script>
 const data = [
   {
-    type: 'danger',
-    lable: '当前无法操作'
+    type: 'primary',
+    lable: '正常'
   },
   {
-    type: 'danger',
-    lable: '当前无法操作'
+    type: 'primary',
+    lable: '正常'
   },{
     type: 'danger',
-    lable: '当前无法操作'
+    lable: '异常'
   },{
     type: 'danger',
-    lable: '当前无法操作'
+    lable: '异常'
+  },{
+    type: 'primary',
+    lable: '正常'
+  },{
+    type: 'primary',
+    lable: '正常'
+  },{
+    type: 'primary',
+    lable: '正常'
   },{
     type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
+    lable: '异常'
   },
 ];
 export default {

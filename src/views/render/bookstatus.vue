@@ -2,13 +2,16 @@
   <div class="block__list--div">
     <a-list item-layout="horizontal" :data-source="data" :pagination="true">
     <!-- <a-list-item slot="renderItem" slot-scope="item"> -->
-    <a-list-item v-for="(item,index) in data" :key="index">
+    <a-list-item v-for="(item,index) in 5" :key="index">
       <a-row class="row">
         <a-col class="flex__col" >
+          <div class="row__left--div">
+            <img src="http://static.zongheng.com/upload/cover/f8/72/f87275042dd99b3849b5f36dc3b2b603.jpeg" style="width:100%"/>
+          </div>
           <div class="row__right--div">
-            <p>隔壁老王的二儿子</p>
+            <p>书名：《前端大佬如何脱坑》</p>
             <div class="opera">
-              <a-button :type="item.type">{{item.lable}}</a-button>
+              <a-button type="primary">查看</a-button>
             </div>
           </div>
         </a-col>
@@ -20,30 +23,16 @@
 <script>
 const data = [
   {
-    type: 'danger',
-    lable: '当前无法操作'
+    title: 'Ant Design Title 1',
   },
   {
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
-  },{
-    type: 'danger',
-    lable: '当前无法操作'
+    title: 'Ant Design Title 2',
+  },
+  {
+    title: 'Ant Design Title 3',
+  },
+  {
+    title: 'Ant Design Title 4',
   },
 ];
 export default {
